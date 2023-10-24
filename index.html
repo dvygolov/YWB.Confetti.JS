@@ -1,26 +1,6 @@
 <html>
   <body>
-    <style>
-      #canvasConfetti {
-        display: block;
-        position: relative;
-        zindex: 1;
-        pointer-events: none;
-        position: fixed;
-        top: 0;
-      }
-    </style>
-    <div id="p_body_content">
-      <canvas id="canvasConfetti" width="1197" height="484"></canvas>
-      <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-      <script src="ywbconfetti.js"></script>
-      <script type="text/javascript">
-        jQuery(document).ready(function () {
-          setTimeout(function () {
-            DeactivateConfetti();
-          }, 4000);
-        });
-      </script>
-    </div>
+    <script src="ywbconfetti.js"></script>
+    <button onclick="new Confetti().start()">Press me!</button>
   </body>
 </html>
